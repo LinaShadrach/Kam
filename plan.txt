@@ -1,9 +1,9 @@
 * create models
-* build navbar
-* add splash page
-* add story view
-* add plans view
-* add photos view
+X * build navbar
+X * add splash page
+X * add story view
+X * add plans view
+X * add photos view
 * add planner login
 * update navbar to show manage option when planner is signed in
 * style splash
