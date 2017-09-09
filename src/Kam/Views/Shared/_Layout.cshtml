@@ -2,11 +2,24 @@
 
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container" id="navbar">
+            <div class="navbar-nav">
+                <div id="navlink">@Html.ActionLink("Their Story", "Index", "Story")</div>
+                <div id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</div>
+                <div id="brand">@Html.ActionLink("Photos", "Index", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Registry", "Index", "Blog")</div>
+                <div id="navlink">@Html.ActionLink("Guestbook", "Index", "Products")</div>
+            </div>
+        </div>
+    </nav>
+    <div class="render-body">
         @RenderBody()
     </div>
 </body>
