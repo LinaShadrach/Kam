@@ -13,19 +13,34 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container" id="navbar">
-            <div class="navbar-nav">
-                <div id="navlink">@Html.ActionLink("Their Story", "Index", "Story")</div>
-                <div id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</div>
-                <div id="brand">@Html.ActionLink("Photos", "Index", "Home")</div>
-                <div id="navlink">@Html.ActionLink("Registry", "Index", "Blog")</div>
-                <div id="navlink">@Html.ActionLink("Guestbook", "Index", "Products")</div>
-            </div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li id="navlink">@Html.ActionLink("Their Story", "Index", "Story")</li>
+                <li id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</li>
+                <li id="brand">@Html.ActionLink("Andrew & Kamarae", "Index", "Home")</li>
+                <li id="navlink">@Html.ActionLink("Photos", "Index", "Photo")</li>
+                <li id="navlink">@Html.ActionLink("Registry", "Index", "Registry")</li>
+                <li id="navlink">@Html.ActionLink("Guestbook", "Index", "Guest")</li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li id="brand">@Html.ActionLink("Andrew & Kamarae", "Index", "Home")</li>
+                <li id="navlink">@Html.ActionLink("Their Story", "Index", "Story")</li>
+                <li id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</li>
+                <li id="navlink">@Html.ActionLink("Photos", "Index", "Photo")</li>
+                <li id="navlink">@Html.ActionLink("Registry", "Index", "Registry")</li>
+                <li id="navlink">@Html.ActionLink("Guestbook", "Index", "Guest")</li>
+            </ul>
         </div>
     </nav>
     <div class="render-body">
         @RenderBody()
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+    })
+</script>
 </html>
