@@ -4,7 +4,7 @@ X * add splash page
 X * add story view
 X * add plans view
 X * add photos view
-* add planner login
+X * add planner login
 * update navbar to show manage option when planner is signed in
 * style splash
 * style navbar
