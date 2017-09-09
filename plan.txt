@@ -1,0 +1,42 @@
+* create models
+* build navbar
+* add splash page
+* add story view
+* add plans view
+* add photos view
+* add planner login
+* update navbar to show manage option when planner is signed in
+* style splash
+* style navbar
+* style story
+* style plan
+* style photo grid
+* style planner
+* add dropdown to navbar
+* make navbar slide down on hover
+* add pop_up for view photos larger
+* add event to photo-pop up to click through
+* add photo slide show to splash
+* add admin upload photos (ajax)
+* add admin edit photos (ajax)
+* add admin delete photos (ajax)
+* add user upload photos (ajax)
+* add admin approve uploaded photos
+* add registry view
+* style registry view
+* add admin create reg item (ajax)
+* add admin edit reg item (ajax)
+* add admin delete reg item (ajax)
+* add admin create reg site (ajax)
+* add admin edit reg site (ajax)
+* add admin delete reg site (ajax)
+* add guestbook view
+* style guest book view
+* add guest
+* admin approve guest
+* add fancy scroll to plans
+* add fancy scroll to story
+* add music
+* add ajax to retrieve more photos
+* make photos on plan slideshow
+* make photos on story slideshow
