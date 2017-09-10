@@ -5,15 +5,18 @@ X * add story view
 X * add plans view
 X * add photos view
 X * add planner login
-X update navbar to show manage option when planner is signed in
-* style splash
+X * update navbar to show manage option when planner is signed in
+X * make navbar slide down on hover
+X style splash
+* get login working
 * style navbar
 * style story
 * style plan
 * style photo grid
+  * make photos responsive
 * style planner
 * add dropdown to navbar
-* make navbar slide down on hover
+* add parallax
 * add pop_up for view photos larger
 * add event to photo-pop up to click through
 * add photo slide show to splash
@@ -40,3 +43,4 @@ X update navbar to show manage option when planner is signed in
 * add ajax to retrieve more photos
 * make photos on plan slideshow
 * make photos on story slideshow
+* fix sidebar title bug
