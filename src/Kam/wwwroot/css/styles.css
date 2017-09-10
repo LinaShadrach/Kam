@@ -1,11 +1,17 @@
 ﻿.gold {
    color: #D4AF37!important;
 }
+.gold-foil{
+    background-image: url("../img/gold-foil.jpg");
+}
 .navy-blue{
     color: #251859!important;
 }
-.gold-foil{
-    background-image: url("../img/gold-foil.jpg");
+.navy-trans{
+    margin: 5%;
+    background-color: rgba(37, 24, 89, .8);
+    border: 1px solid #251859;
+    border-radius: 5px;
 }
 
 body{
@@ -15,7 +21,12 @@ body{
 .marroon {
     background-color: #701327;
 }
-.marroon-fabric{
+.marroon-trans {
+    background-color: rgba(112, 19, 39, .85);
+    border: 1px solid #701327;
+    border-radius: 5px;
+}
+.marroon-fabric {
     background-image: url("../img/dark-maroon-black-silk-background.jpg");
 }
 

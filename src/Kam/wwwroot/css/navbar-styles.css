@@ -1,7 +1,11 @@
-﻿
-
-nav {
+﻿nav {
   transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
+}
+.navlink{
+    font-size: 16px;
+}
+.navlink:hover{
+       color: #D4AF37!important;
 }

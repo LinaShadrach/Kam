@@ -15,17 +15,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
-<body class="hero-image marroon">
-    <div class="nav-container navbar-fixed marroon">
+<body class="hero-image marroon-fabric">
+    <div class="nav-container navbar-fixed marroon-trans">
     <nav id="mybar" class="z-depth-0 marroon">
-        <a asp-controller="Home" asp-action="Index" data-activates="mobile-demo" class="nav-collaspe button-collapse gold">A & K</a>
+        <a href="#" data-activates="mobile-demo" class="nav-collaspe button-collapse gold">A & K</a>
         <ul id="nav-mobile" class="hide-on-med-and-down">
-            <li><a asp-controller="About" asp-action="Index" class="navlink gold">Their Story</a></li>
-            <li><a asp-controller="Plan" asp-action="Index" class="navlink gold">Plans</a></li>
-            <li><a asp-controller="About" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
-            <li><a asp-controller="Photo" asp-action="Index" class="navlink gold float-right">Photos</a></li>
-            <li><a asp-controller="Registry" asp-action="Index" class="navlink gold float-right">Registry</a></li>
-            <li><a asp-controller="Guest" asp-action="Index" class="navlink gold float-right">GuestBook</a></li>
+            <li><a asp-controller="About" asp-action="Index" class="navlink navy-blue">Their Story</a></li>
+            <li><a asp-controller="Plan" asp-action="Index" class="navlink navy-blue">Plans</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
+            <li><a asp-controller="Photo" asp-action="Index" class="navlink navy-blue float-right">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink navy-blue float-right">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink navy-blue float-right">GuestBook</a></li>
             @if (User.Identity.IsAuthenticated)
             {
                 <!-- Dropdown Structure -->
@@ -44,12 +44,12 @@
             }
         </ul>
         <ul class="side-nav gold-foil" id="mobile-demo">
-            <li><a asp-controller="Home" asp-action="Index" class="brand navy-blue">Andrew & Kamarae</a></li>
-            <li><a asp-controller="About" asp-action="Index" class="navlink navy-blue">Their Story</a></li>
-            <li><a asp-controller="Plan" asp-action="Index" class="navlink navy-blue">Plans</a></li>
-            <li><a asp-controller="Photos" asp-action="Index" class="navlink navy-blue">Photos</a></li>
-            <li><a asp-controller="Registry" asp-action="Index" class="navlink navy-blue">Registry</a></li>
-            <li><a asp-controller="Guest" asp-action="Index" class="navlink navy-blue">GuestBook</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="brand gold navy-trans">Andrew & Kamarae</a></li>
+            <li><a asp-controller="About" asp-action="Index" class="navlink gold navy-trans">Their Story</a></li>
+            <li><a asp-controller="Plan" asp-action="Index" class="navlink gold navy-trans">Plans</a></li>
+            <li><a asp-controller="Photos" asp-action="Index" class="navlink gold navy-trans">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink gold navy-trans">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink gold navy-trans">GuestBook</a></li>
         </ul>
     </nav>
     </div>
@@ -60,7 +60,6 @@
 <script>
     $(document).ready(function () {
         $(".button-collapse").sideNav();
-        $('.slider').slider();
         $(".dropdown-button").dropdown();
       
         var mouseY = 0;
