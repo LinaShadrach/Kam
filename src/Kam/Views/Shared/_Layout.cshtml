@@ -15,42 +15,40 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper blue-grey">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="hide-on-med-and-down">
-                <li id="navlink">@Html.ActionLink("Their Story", "Index", "About")</li>
-                <li id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</li>
-                <li id="brand">@Html.ActionLink("Andrew & Kamarae", "Index", "Home")</li>
-                <li id="navlink">@Html.ActionLink("Photos", "Index", "Photo")</li>
-                <li id="navlink">@Html.ActionLink("Registry", "Index", "Registry")</li>
-                <li id="navlink">@Html.ActionLink("Guestbook", "Index", "Guest")</li>
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <!-- Dropdown Structure -->
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a asp-controller="About" asp-action="Edit">Story</a></li>
-                        <li class="divider"></li>
-                        <li><a asp-controller="Plans" asp-action="Edit">Story</a></li>
-                        <li class="divider"></li>
-                        <li><a asp-controller="Photos" asp-action="Edit">Story</a></li>
-                        <li class="divider"></li>
-                        <li><a asp-controller="Registry" asp-action="Edit">Story</a></li>
-                        <li class="divider"></li>
-                        <li><a asp-controller="Guestbook" asp-action="Edit">Story</a></li>
-                    </ul>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Manage<i class="material-icons right">arrow_drop_down</i></a></li>
-                }
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li id="brand">@Html.ActionLink("Andrew & Kamarae", "Index", "Home")</li>
-                <li id="navlink">@Html.ActionLink("Their Story", "Index", "About")</li>
-                <li id="navlink">@Html.ActionLink("Wedding Plans", "Index", "Plan")</li>
-                <li id="navlink">@Html.ActionLink("Photos", "Index", "Photo")</li>
-                <li id="navlink">@Html.ActionLink("Registry", "Index", "Registry")</li>
-                <li id="navlink">@Html.ActionLink("Guestbook", "Index", "Guest")</li>
-            </ul>
-        </div>
+    <nav  class="z-depth-0">
+        <a href="#" data-activates="mobile-demo" class="button-collapse navlink">A & K</a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+            <li><a asp-controller="About" asp-action="Index" class="navlink">Their Story</a></li>
+            <li><a asp-controller="Plans" asp-action="Index" class="navlink">Plans</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="brand">Andrew & Kamarae</a></li>
+            <li><a asp-controller="Photos" asp-action="Index" class="navlink float-right">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink float-right">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink float-right">GuestBook</a></li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a asp-controller="About" asp-action="Edit" class="navlink">About</a></li>
+                    <li class="divider"></li>
+                    <li><a asp-controller="Plan" asp-action="Edit" class="navlink">Plan</a></li>
+                    <li class="divider"></li>
+                    <li><a asp-controller="Photo" asp-action="Edit" class="navlink">Photo</a></li>
+                    <li class="divider"></li>
+                    <li><a asp-controller="Registry" asp-action="Edit" class="navlink">Registry</a></li>
+                    <li class="divider"></li>
+                    <li><a asp-controller="Guest" asp-action="Edit" class="navlink">Guest</a></li>
+                </ul>
+                <li><a class="dropdown-button navlink" href="#!" data-activates="dropdown1">Manage<i class="material-icons right">arrow_drop_down</i></a></li>
+            }
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a asp-controller="Home" asp-action="Index" class="brand">Andrew & Kamarae</a></li>
+            <li><a asp-controller="About" asp-action="Index" class="navlink">Their Story</a></li>
+            <li><a asp-controller="Plans" asp-action="Index" class="navlink">Plans</a></li>
+            <li><a asp-controller="Photos" asp-action="Index" class="navlink">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink">GuestBook</a></li>
+        </ul>
     </nav>
     <div class="render-body">
         @RenderBody()
@@ -61,6 +59,7 @@
         $(".button-collapse").sideNav();
         $('.slider').slider();
         $(".dropdown-button").dropdown();
+        $("nav").fadeIn(5000);
     })
 </script>
 </html>

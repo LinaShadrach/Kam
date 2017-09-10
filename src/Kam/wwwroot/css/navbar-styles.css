@@ -1,0 +1,15 @@
+﻿nav {
+    display: none;
+    border: none;
+}
+
+nav, .side-nav {
+  background-color: #6d142c;
+}
+
+.navlink, .brand {
+   color: #d6ac04!important;
+}
+.brand {
+    font-size: 48px;
+}
