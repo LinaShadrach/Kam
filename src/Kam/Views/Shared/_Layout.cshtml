@@ -10,8 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Homemade+Apple|Norican|Pacifico|Podkova" rel="stylesheet">
     <!-- Personal style sheets -->
-    <link rel="stylesheet" href="~/css/hero-styles.css">
     <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/css/navbar-styles.css">
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
@@ -21,9 +21,9 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse gold">A & K</a>
         <ul id="nav-mobile" class="hide-on-med-and-down">
             <li><a asp-controller="About" asp-action="Index" class="navlink gold">Their Story</a></li>
-            <li><a asp-controller="Plans" asp-action="Index" class="navlink gold">Plans</a></li>
+            <li><a asp-controller="Plan" asp-action="Index" class="navlink gold">Plans</a></li>
             <li><a asp-controller="Home" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
-            <li><a asp-controller="Photos" asp-action="Index" class="navlink gold float-right">Photos</a></li>
+            <li><a asp-controller="Photo" asp-action="Index" class="navlink gold float-right">Photos</a></li>
             <li><a asp-controller="Registry" asp-action="Index" class="navlink gold float-right">Registry</a></li>
             <li><a asp-controller="Guest" asp-action="Index" class="navlink gold float-right">GuestBook</a></li>
             @if (User.Identity.IsAuthenticated)
@@ -46,7 +46,7 @@
         <ul class="side-nav" id="mobile-demo">
             <li><a asp-controller="Home" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
             <li><a asp-controller="About" asp-action="Index" class="navlink gold">Their Story</a></li>
-            <li><a asp-controller="Plans" asp-action="Index" class="navlink gold">Plans</a></li>
+            <li><a asp-controller="Plan" asp-action="Index" class="navlink gold">Plans</a></li>
             <li><a asp-controller="Photos" asp-action="Index" class="navlink gold">Photos</a></li>
             <li><a asp-controller="Registry" asp-action="Index" class="navlink gold">Registry</a></li>
             <li><a asp-controller="Guest" asp-action="Index" class="navlink gold">GuestBook</a></li>
@@ -62,9 +62,6 @@
         $(".button-collapse").sideNav();
         $('.slider').slider();
         $(".dropdown-button").dropdown();
-        $("nav").fadeIn(18000);
-        $(".navlink").fadeIn(20000);
-        $(".brand").fadeIn(5000);
     })
 </script>
 </html>
