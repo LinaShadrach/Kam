@@ -5,8 +5,11 @@
 body{
     background-color: #7c2135;
     font-family: 'Pacifico', cursive;
+    height: 100000px;
 }
 
 .brand{
+
+    font-size: 46px;
     font-family: 'Delius Swash Caps', cursive;
 }

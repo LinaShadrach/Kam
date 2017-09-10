@@ -16,7 +16,7 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="nav-container">
+    <div class="nav-container navbar-fixed">
     <nav id="mybar" class="z-depth-0">
         <a href="#" data-activates="mobile-demo" class="button-collapse gold">A & K</a>
         <ul id="nav-mobile" class="hide-on-med-and-down">
@@ -62,6 +62,27 @@
         $(".button-collapse").sideNav();
         $('.slider').slider();
         $(".dropdown-button").dropdown();
-    })
+      
+        var mouseY = 0;
+        var max = 70;
+
+        document.addEventListener('mousemove', function(e) {
+          mouseY = e.clientY || e.pageY;
+          if(mouseY < max) {
+             $('nav').css({ top: '0' });
+          }
+        }, false);
+
+        $(window).scroll(function () {
+          var sc = ($(this).scrollTop() > max) ? $('nav').css({ top: '-70px' }) : $('nav').css({ top: '0' });
+        });
+
+        $('nav').mouseout(function() {
+          if($(window).scrollTop() > max) {
+             $('nav').css({ top: '-70px' });
+          }
+        });
+
+    });
 </script>
 </html>

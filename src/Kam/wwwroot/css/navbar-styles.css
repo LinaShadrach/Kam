@@ -1,12 +1,14 @@
 ﻿
 .nav-container {
-    margin: 2%!important;
+    margin-left: 2%!important;
+    margin-right: 2%!important;
 
 }
 nav, .side-nav {
   background-color: #7c2135;
 }
-
-.brand {
-    font-size: 46px;
+nav {
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
 }
