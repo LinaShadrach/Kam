@@ -23,7 +23,7 @@ namespace Kam.Models
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Flickr;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Kam;integrated security=True");
         }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
