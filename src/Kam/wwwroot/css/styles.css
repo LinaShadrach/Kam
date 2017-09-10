@@ -1,15 +1,35 @@
 ﻿.gold {
-   color: #d6ac04!important;
+   color: #D4AF37!important;
+}
+.navy-blue{
+    color: #251859!important;
+}
+.gold-foil{
+    background-image: url("../img/gold-foil.jpg");
 }
 
 body{
-    background-color: #7c2135;
     font-family: 'Pacifico', cursive;
     height: 100000px;
 }
+.marroon {
+    background-color: #701327;
+}
+.marroon-fabric{
+    background-image: url("../img/dark-maroon-black-silk-background.jpg");
+}
 
-.brand{
-
+.brand {
+    display: none;
     font-size: 46px;
     font-family: 'Delius Swash Caps', cursive;
+}
+.blue-fabric{
+    background-image: url("../img/navy-fabric.jpg");
+}
+.blurb{
+    border-radius: 25px;
+}
+.blurb-img{
+    border-radius: 40px;
 }
