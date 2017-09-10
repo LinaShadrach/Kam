@@ -1,15 +1,14 @@
-﻿nav {
+﻿nav, .navlink{
     display: none;
-    border: none;
 }
+.nav-container {
+    margin: 2%!important;
 
+}
 nav, .side-nav {
-  background-color: #6d142c;
+  background-color: #7c2135;
 }
 
-.navlink, .brand {
-   color: #d6ac04!important;
-}
 .brand {
-    font-size: 48px;
+    font-size: 46px;
 }

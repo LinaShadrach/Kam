@@ -8,48 +8,51 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Materialize- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Homemade+Apple|Norican|Pacifico|Podkova" rel="stylesheet">
     <!-- Personal style sheets -->
     <link rel="stylesheet" href="~/css/hero-styles.css">
+    <link rel="stylesheet" href="~/css/styles.css">
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav  class="z-depth-0">
-        <a href="#" data-activates="mobile-demo" class="button-collapse navlink">A & K</a>
+    <div class="nav-container">
+    <nav id="mybar" class="z-depth-0">
+        <a href="#" data-activates="mobile-demo" class="button-collapse gold">A & K</a>
         <ul id="nav-mobile" class="hide-on-med-and-down">
-            <li><a asp-controller="About" asp-action="Index" class="navlink">Their Story</a></li>
-            <li><a asp-controller="Plans" asp-action="Index" class="navlink">Plans</a></li>
-            <li><a asp-controller="Home" asp-action="Index" class="brand">Andrew & Kamarae</a></li>
-            <li><a asp-controller="Photos" asp-action="Index" class="navlink float-right">Photos</a></li>
-            <li><a asp-controller="Registry" asp-action="Index" class="navlink float-right">Registry</a></li>
-            <li><a asp-controller="Guest" asp-action="Index" class="navlink float-right">GuestBook</a></li>
+            <li><a asp-controller="About" asp-action="Index" class="navlink gold">Their Story</a></li>
+            <li><a asp-controller="Plans" asp-action="Index" class="navlink gold">Plans</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
+            <li><a asp-controller="Photos" asp-action="Index" class="navlink gold float-right">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink gold float-right">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink gold float-right">GuestBook</a></li>
             @if (User.Identity.IsAuthenticated)
             {
                 <!-- Dropdown Structure -->
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a asp-controller="About" asp-action="Edit" class="navlink">About</a></li>
+                    <li><a asp-controller="About" asp-action="Edit" class="navlink gold">About</a></li>
                     <li class="divider"></li>
-                    <li><a asp-controller="Plan" asp-action="Edit" class="navlink">Plan</a></li>
+                    <li><a asp-controller="Plan" asp-action="Edit" class="navlink gold">Plan</a></li>
                     <li class="divider"></li>
-                    <li><a asp-controller="Photo" asp-action="Edit" class="navlink">Photo</a></li>
+                    <li><a asp-controller="Photo" asp-action="Edit" class="navlink gold">Photo</a></li>
                     <li class="divider"></li>
-                    <li><a asp-controller="Registry" asp-action="Edit" class="navlink">Registry</a></li>
+                    <li><a asp-controller="Registry" asp-action="Edit" class="navlink gold">Registry</a></li>
                     <li class="divider"></li>
-                    <li><a asp-controller="Guest" asp-action="Edit" class="navlink">Guest</a></li>
+                    <li><a asp-controller="Guest" asp-action="Edit" class="navlink gold">Guest</a></li>
                 </ul>
-                <li><a class="dropdown-button navlink" href="#!" data-activates="dropdown1">Manage<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button navlink gold" href="#!" data-activates="dropdown1">Manage<i class="material-icons right">arrow_drop_down</i></a></li>
             }
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a asp-controller="Home" asp-action="Index" class="brand">Andrew & Kamarae</a></li>
-            <li><a asp-controller="About" asp-action="Index" class="navlink">Their Story</a></li>
-            <li><a asp-controller="Plans" asp-action="Index" class="navlink">Plans</a></li>
-            <li><a asp-controller="Photos" asp-action="Index" class="navlink">Photos</a></li>
-            <li><a asp-controller="Registry" asp-action="Index" class="navlink">Registry</a></li>
-            <li><a asp-controller="Guest" asp-action="Index" class="navlink">GuestBook</a></li>
+            <li><a asp-controller="Home" asp-action="Index" class="brand gold">Andrew & Kamarae</a></li>
+            <li><a asp-controller="About" asp-action="Index" class="navlink gold">Their Story</a></li>
+            <li><a asp-controller="Plans" asp-action="Index" class="navlink gold">Plans</a></li>
+            <li><a asp-controller="Photos" asp-action="Index" class="navlink gold">Photos</a></li>
+            <li><a asp-controller="Registry" asp-action="Index" class="navlink gold">Registry</a></li>
+            <li><a asp-controller="Guest" asp-action="Index" class="navlink gold">GuestBook</a></li>
         </ul>
     </nav>
+    </div>
     <div class="render-body">
         @RenderBody()
     </div>
@@ -59,7 +62,9 @@
         $(".button-collapse").sideNav();
         $('.slider').slider();
         $(".dropdown-button").dropdown();
-        $("nav").fadeIn(5000);
+        $("nav").fadeIn(18000);
+        $(".navlink").fadeIn(20000);
+        $(".brand").fadeIn(5000);
     })
 </script>
 </html>
