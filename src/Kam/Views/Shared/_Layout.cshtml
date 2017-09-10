@@ -23,6 +23,22 @@
                 <li id="navlink">@Html.ActionLink("Photos", "Index", "Photo")</li>
                 <li id="navlink">@Html.ActionLink("Registry", "Index", "Registry")</li>
                 <li id="navlink">@Html.ActionLink("Guestbook", "Index", "Guest")</li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a asp-controller="About" asp-action="Edit">Story</a></li>
+                        <li class="divider"></li>
+                        <li><a asp-controller="Plans" asp-action="Edit">Story</a></li>
+                        <li class="divider"></li>
+                        <li><a asp-controller="Photos" asp-action="Edit">Story</a></li>
+                        <li class="divider"></li>
+                        <li><a asp-controller="Registry" asp-action="Edit">Story</a></li>
+                        <li class="divider"></li>
+                        <li><a asp-controller="Guestbook" asp-action="Edit">Story</a></li>
+                    </ul>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Manage<i class="material-icons right">arrow_drop_down</i></a></li>
+                }
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li id="brand">@Html.ActionLink("Andrew & Kamarae", "Index", "Home")</li>
