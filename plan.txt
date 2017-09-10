@@ -5,7 +5,7 @@ X * add story view
 X * add plans view
 X * add photos view
 X * add planner login
-* update navbar to show manage option when planner is signed in
+X update navbar to show manage option when planner is signed in
 * style splash
 * style navbar
 * style story
